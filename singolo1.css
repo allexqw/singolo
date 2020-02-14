@@ -60,6 +60,12 @@ body{
 .nav__item{
   margin-top: 0px;
   letter-spacing:0px;
+  transition: .5s linear;
+}
+
+.nav__item:hover{
+  color: #f06c64;
+  cursor: pointer;
 }
 
 .nav__item::after {
@@ -69,3 +75,179 @@ body{
   font-size: 18px;
   color: #494e62;
 }
+
+/* slider */
+.slider{
+  width: 100%;
+  max-width: 1020px;
+  height: 600px;
+  background: #f06c64;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 45px;
+}
+
+.phone__one{
+width: 215px;
+height: 458px;
+background: #f2f2f2;
+margin-top: -36px;
+margin-left: -26px;
+border-radius: 25px;
+position: relative;
+box-shadow: 26px 25px 0px -1px #ce5d56,18px 19px 0px -1px #ce5d56,13px 15px 0px -1px #ce5d56,8px 10px 0px -1px #ce5d56; 
+}
+.phone__two{
+  width: 458px;
+  height: 215px;
+  background: #f2f2f2;
+  margin-top: -36px;
+margin-left: 26px;
+border-radius: 25px;
+position: relative;
+box-shadow: 26px 25px 0px -1px #ce5d56,18px 19px 0px -1px #ce5d56,13px 15px 0px -1px #ce5d56,8px 10px 0px -1px #ce5d56; 
+}
+
+.switch{
+  border: 5px solid #ca4549;
+  width: 21px;
+  height:21px;
+  border-radius: 5px ;
+  margin-top: -12px;
+}
+
+.left{
+  border-top: none;
+  border-right: none;
+  transform: rotate(45deg);
+}
+
+.right{
+  border-left: none;
+  border-bottom: none;
+  transform: rotate(45deg);
+  margin-right: -3px;
+}
+.right, .left:hover{
+  cursor: pointer;
+
+
+}
+
+.phone__one .camera{
+width: 10px;
+height: 10px;
+border-radius: 50%;
+border: 2.5px solid #dfdfdf;
+background: #eb5055;
+position: absolute;
+top:16px;
+left:103px;
+}
+
+.phone__one .speaker{
+  width: 36px;
+  height: 5px;
+  border-radius: 5px;
+  border: 2.5px solid #acacac;
+  position: absolute;
+  top:36px;
+  left:90px;
+}
+
+.phone__one .display{
+  width: 193px;
+  height: 338px;
+  border: 2.5px solid #c6c6c6;
+  border-radius: 3px;
+  position: absolute;
+  top:61.5px;
+  left:11px;
+  background: url(./assets/phone1.png) no-repeat ;
+  background-size: cover;
+}
+
+.phone__one .home{
+
+  width: 43px;
+  height: 43px;
+  border: 10px solid #fff;
+  border-radius: 3px;
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+  top:407px;
+  left:84px;
+
+}
+.phone__one .home2{
+  width: 17px;
+  height: 17px;
+  border: 2px solid #c2c2c2;
+  border-radius: 5px;
+  position: absolute;
+  background: #fff;
+  top:420px;
+  left:98px;
+
+}
+
+
+.phone__two .camera{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2.5px solid #dfdfdf;
+  background: #eb5055;
+  position: absolute;
+  top:101px;
+  left:431px;
+  }
+  
+  .phone__two .speaker{
+    width: 5px;
+    height: 36px;
+    border-radius: 5px;
+    border: 2.5px solid #acacac;
+    position: absolute;
+    top:89px;
+    left:416px;
+  }
+  
+  .phone__two .display{
+    width: 338px;
+    height: 193px;
+    border: 2.5px solid #c6c6c6;
+    border-radius: 3px;
+    position: absolute;
+    top:10.5px;
+    left:56px;
+    background: url(./assets/phone2.png) no-repeat ;
+    background-size: cover;
+  }
+  
+  .phone__two .home{
+  
+    width: 43px;
+    height: 43px;
+    border: 10px solid #fff;
+    border-radius: 3px;
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+    top:85px;
+    left:7px;
+  
+  }
+  .phone__two .home2{
+    width: 17px;
+    height: 17px;
+    border: 2px solid #c2c2c2;
+    border-radius: 5px;
+    position: absolute;
+    background: #fff;
+    top:98px;
+    left:20px;
+  
+  }
